@@ -1,0 +1,103 @@
+.Three-D{
+line-height: 1em;
+color: #7c3886;
+font-size: 30px;
+}
+.sub_menu{
+    font-size: 14px;
+    color: #FFF;
+    background-color: #7C3886;
+    box-shadow: 0 0 5px #7C3886;
+    border-radius: 5px;
+    margin: 6px;
+}
+/* expand-collapse*/
+.layer {
+margin: 0;
+padding: 0;
+width: auto;
+}
+.layer0 {
+margin: 0;
+padding: 0;
+width: 150px;
+}
+
+.heading1 {
+margin: 1px;
+color: #fff;
+padding: 3px 10px;
+cursor: pointer;
+position: relative;
+background-color: #7C3886;
+border-radius: 10px;
+}
+/* pop up */
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+/* xxxxx read more or less xxxxx*/
+/*custom font for text*/
+
+/*Basic reset*/
+* {
+    /*margin: 0;*/
+    padding: 0;
+}
+#vertical-menu {
+    /*background: #004050;*/
+    color: #2c2226;
+}
+/*heading styles*/
+#vertical-menu h3 {
+    font-size: 12px;
+    width: 25em;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #9EB6CE;
+    border-width: 0px 1px 1px 0px;
+    background: linear-gradient(to bottom, rgba(180,223,91,0.32) 0%,rgba(180,223,91,0.9) 100%);
+}
+/*heading hover effect*/
+#vertical-menu h3:hover {
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.7);
+}
+/*iconfont styles*/
+#vertical-menu h3 span {
+    font-size: 16px;
+    margin-right: 10px;
+}
+/*list items*/
+#vertical-menu li {
+    /*list-style-type: none;*/
+}
+/*links*/
+#vertical-menu ul ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 27px;
+    display: block;
+    padding: 0 15px;
+    /*transition for smooth hover animation*/
+    transition: all 0.15s;
+}
+/*hover effect on links*/
+#vertical-menu ul ul li a:hover {
+    background: #003545;
+    /*border-left: 5px solid lightgreen;*/
+}
+/*Lets hide the non active LIs by default*/
+#vertical-menu ul ul {
+    display: none;
+}
+#vertical-menu li.active ul {
+    display: block;
+}
